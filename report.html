@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Problem — HostelCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-page">
+    <header class="navbar"><a class="brand" href="dashboard.html"><span
+                class="brand-mark">⌂</span><span>Hostel<span>Care</span></span></a>
+        <nav><a href="dashboard.html">Dashboard</a><a href="complaints.html">Complaints</a><a class="active"
+                href="report.html">Report</a></nav>
+        <div class="nav-actions"><a class="nav-login" href="profile.html">Profile</a><button class="btn btn-small"
+                id="logoutBtn">Logout</button></div>
+    </header>
+    <main class="form-main section">
+        <div class="page-head">
+            <div>
+                <div class="eyebrow">NEW COMPLAINT</div>
+                <h1>Report a <em>problem.</em></h1>
+                <p class="muted">Tell us what needs to be fixed.</p>
+            </div>
+        </div>
+        <form id="complaintForm" class="form-card">
+            <div class="two-input"><label>Title<input id="title" required maxlength="100"
+                        placeholder="e.g. Water leaking from bathroom"></label><label>Category<select id="category">
+                        <option>Hostel</option>
+                        <option>Mess</option>
+                        <option>Electricity</option>
+                        <option>Water</option>
+                        <option>Cleaning</option>
+                        <option>WiFi</option>
+                        <option>Maintenance</option>
+                        <option>Other</option>
+                    </select></label></div>
+            <div class="two-input"><label>Location<input id="location" required maxlength="150"
+                        placeholder="e.g. BH-4, Room 302"></label><label>Priority<select id="priority">
+                        <option>Low</option>
+                        <option selected>Medium</option>
+                        <option>High</option>
+                    </select></label></div><label>Description<textarea id="description" required
+                    maxlength="2000" placeholder="Explain the problem clearly..."></textarea>
+                <div id="formMessage" class="message"></div><button class="btn" type="submit">Submit complaint
+                    ↗</button>
+        </form>
+    </main>
+    <script type="module" src="js/student.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — HostelCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-page">
+    <div class="bg-glow glow-one"></div>
+    <header class="navbar"><a class="brand" href="dashboard.html"><span
+                class="brand-mark">⌂</span><span>Hostel<span>Care</span></span></a>
+        <nav><a class="active" href="dashboard.html">Dashboard</a><a href="complaints.html">Complaints</a><a
+                href="report.html">Report</a></nav>
+        <div class="nav-actions"><a class="nav-login" href="profile.html">Profile</a><button class="btn btn-small"
+                id="logoutBtn">Logout</button></div>
+    </header>
+    <main class="app-main section">
+        <div class="page-head">
+            <div>
+                <div class="eyebrow">STUDENT DASHBOARD</div>
+                <h1>Good morning, <em id="userName">there.</em></h1>
+                <p class="muted">Here's what's happening with your hostel services.</p>
+            </div><a class="btn" href="report.html">+ Report problem</a>
+        </div>
+        <div class="summary-grid">
+            <div class="summary"><small>TOTAL COMPLAINTS</small><strong id="totalCount">0</strong></div>
+            <div class="summary"><small>IN PROGRESS</small><strong id="progressCount">0</strong></div>
+            <div class="summary"><small>RESOLVED</small><strong id="resolvedCount">0</strong></div>
+        </div>
+        <section class="quick-card">
+            <div>
+                <div class="eyebrow">NEED SOMETHING FIXED?</div>
+                <h2>Have a problem?</h2>
+                <p class="muted">Tell us what went wrong and we'll get it to the right worker.</p>
+            </div><a class="btn" href="report.html">Report a problem ↗</a>
+        </section>
+        <section class="list-section">
+            <div class="section-head">
+                <h2>Recent complaints</h2><a href="complaints.html">View all →</a>
+            </div>
+            <div id="complaintList" class="complaint-list">
+                <div class="empty">Loading complaints...</div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/student.js"></script>
+</body>
+
+</html>

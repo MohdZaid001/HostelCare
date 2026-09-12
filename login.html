@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — HostelCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+    <div class="bg-glow glow-one"></div>
+    <div class="bg-glow glow-two"></div><a class="brand auth-brand" href="index.html"><span
+            class="brand-mark">⌂</span><span>Hostel<span>Care</span></span></a>
+    <main class="auth-shell">
+        <section class="auth-card">
+            <div class="eyebrow">WELCOME BACK</div>
+            <h1>Login to<br><em>HostelCare.</em></h1>
+            <p class="muted">Track your hostel and mess services in one place.</p>
+            <form id="loginForm"><label>Email<input id="email" type="email" placeholder="you@example.com"
+                        required></label><label>Password<input id="password" type="password" placeholder="••••••••"
+                        required></label>
+                <div id="authMessage" class="message"></div><button class="btn full" type="submit">Login
+                    <span>↗</span></button>
+            </form>
+            <p class="switch">Don't have an account? <a href="signup.html">Create one</a></p>
+        </section>
+    </main>
+    <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>

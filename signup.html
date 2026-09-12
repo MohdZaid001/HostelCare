@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up — HostelCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+    <div class="bg-glow glow-one"></div>
+    <div class="bg-glow glow-two"></div><a class="brand auth-brand" href="index.html"><span
+            class="brand-mark">⌂</span><span>Hostel<span>Care</span></span></a>
+    <main class="auth-shell">
+        <section class="auth-card signup-card">
+            <div class="eyebrow">GET STARTED</div>
+            <h1>Create your<br><em>account.</em></h1>
+            <form id="signupForm"><label>Full name<input id="name" type="text" placeholder="Your name"
+                        required maxlength="100"></label><label>Email<input id="email" type="email" placeholder="you@example.com"
+                        required></label>
+                <div class="two-input"><label>Password<input id="password" type="password" placeholder="••••••••"
+                            required minlength="8"></label><label>Confirm password<input id="confirm" type="password"
+                            placeholder="••••••••" required minlength="8"></label></div><label>Account type</label>
+                <div class="role-grid"><div class="role selected" aria-label="Student account"><strong>STUDENT</strong><small>Report & track issues</small></div></div>
+                <div id="authMessage" class="message"></div><button class="btn full" type="submit">Create account
+                    <span>↗</span></button>
+            </form>
+            <p class="switch">Already have an account? <a href="login.html">Login</a></p>
+        </section>
+    </main>
+    <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>

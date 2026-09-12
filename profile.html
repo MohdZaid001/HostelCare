@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile — HostelCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-page">
+    <header class="navbar"><a class="brand" href="dashboard.html"><span
+                class="brand-mark">⌂</span><span>Hostel<span>Care</span></span></a>
+        <nav><a href="dashboard.html" data-nav="dashboard">Dashboard</a><a href="complaints.html" data-nav="complaints">Complaints</a><a
+                href="report.html" data-nav="report">Report</a></nav>
+        <div class="nav-actions"><button class="btn btn-small" id="logoutBtn">Logout</button></div>
+    </header>
+    <main class="profile-main section">
+        <div class="profile-card">
+            <div class="avatar big" id="avatar">HC</div>
+            <div>
+                <div class="eyebrow">PROFILE</div>
+                <h1 id="profileName">Loading...</h1>
+                <p class="muted" id="profileEmail"></p><span class="role-badge" id="profileRole"></span>
+            </div>
+            <div class="profile-line"></div>
+            <div class="profile-info"><span>ACCOUNT</span><strong>HostelCare member</strong></div>
+        </div>
+    </main>
+    <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>

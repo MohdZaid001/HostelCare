@@ -1,0 +1,23 @@
+# Local configuration / secrets
+js/config.js
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# ==============================
+# VS Code
+# ==============================
+.vscode/

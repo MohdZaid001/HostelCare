@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worker Dashboard — HostelCare</title><link rel="stylesheet" href="css/style.css">
+</head><body class="app-page">
+<header class="navbar">
+<a class="brand" href="worker.html"><span class="brand-mark">⌂</span><span>Hostel<span>Care</span></span></a>
+<nav><a class="active" href="worker.html">Dashboard</a><a href="profile.html">Profile</a></nav>
+<div class="nav-actions"><button class="btn btn-small" id="logoutBtn">Logout</button></div>
+</header>
+<main class="app-main section">
+<div class="page-head"><div><div class="eyebrow">WORKER DASHBOARD</div>
+<h1>Let's get things <em>fixed.</em></h1>
+<p class="muted">Pick an unassigned problem, work on it, and close the loop.</p></div>
+<button class="btn btn-small" id="refreshWorker">↻</button></div>
+
+<div class="summary-grid">
+<div class="summary"><small>NEW QUEUE</small><strong id="queueCount">0</strong></div>
+<div class="summary"><small>ASSIGNED</small><strong id="assignedCount">0</strong></div>
+<div class="summary"><small>IN PROGRESS</small><strong id="workerProgress">0</strong></div>
+<div class="summary"><small>RESOLVED</small><strong id="workerResolved">0</strong></div>
+</div>
+
+<section class="list-section"><div class="section-head"><h2>New problems</h2><span class="muted">Take one to become responsible for it.</span></div>
+<div id="queueList" class="complaint-grid"><div class="empty">Loading...</div></div></section>
+
+<section class="list-section"><div class="section-head"><h2>My assigned complaints</h2></div>
+<div id="workerList" class="complaint-grid"><div class="empty">Loading...</div></div></section>
+</main>
+<script type="module" src="js/worker.js"></script></body></html>

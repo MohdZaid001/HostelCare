@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Complaints — HostelCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="app-page">
+    <header class="navbar"><a class="brand" href="dashboard.html"><span
+                class="brand-mark">⌂</span><span>Hostel<span>Care</span></span></a>
+        <nav><a href="dashboard.html">Dashboard</a><a class="active" href="complaints.html">Complaints</a><a
+                href="report.html">Report</a></nav>
+        <div class="nav-actions"><a class="nav-login" href="profile.html">Profile</a><button class="btn btn-small"
+                id="logoutBtn">Logout</button></div>
+    </header>
+    <main class="app-main section">
+        <div class="page-head">
+            <div>
+                <div class="eyebrow">YOUR REPORTS</div>
+                <h1>My <em>complaints.</em></h1>
+                <p class="muted">Everything you've reported, in one place.</p>
+            </div><a class="btn" href="report.html">+ New complaint</a>
+        </div>
+        <div class="filters"><button class="filter active" data-filter="All">All</button><button class="filter"
+                data-filter="Pending">Pending</button><button class="filter" data-filter="In Progress">In
+                Progress</button><button class="filter" data-filter="Resolved">Resolved</button></div>
+        <div id="allComplaints" class="complaint-grid">
+            <div class="empty">Loading complaints...</div>
+        </div>
+    </main>
+    <script type="module" src="js/student.js"></script>
+</body>
+
+</html>
