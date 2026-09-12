@@ -117,7 +117,7 @@ if ($("complaintForm")) {
         student_id: ctx.user.id,
         title,
         category,
-        location,
+        location: locationValue,
         priority,
         description,
         status: "Pending"
