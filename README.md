@@ -651,56 +651,6 @@ It gets:
 
 ---
 
-# 🚀 Future Scope
-
-The MVP can later be extended with:
-
-### 📈 Service Analytics
-
-Track:
-
-- Average resolution time
-- Complaints by category
-- Complaints by hostel/block
-- Worker workload
-- Resolution rate
-- Student satisfaction
-
-### 🏢 Hostel-wise Analytics
-
-The system could identify recurring issues:
-
-```text
-Block 32
-Water → 42 complaints
-
-Block 18
-Wi-Fi → 27 complaints
-```
-
-This could help campus management identify infrastructure problems.
-
----
-
-# 🎯 Hackathon Impact
-
-HostelCare addresses a common campus problem by creating a transparent connection between:
-
-**Students → Workers → Service Resolution**
-
-Instead of treating complaints as isolated messages, HostelCare turns them into **trackable service tasks**.
-
-This can help improve:
-
-- Accountability
-- Transparency
-- Response tracking
-- Student experience
-- Service quality
-- Feedback collection
-
----
-
 # 👨‍💻 Project
 
 **Project Name:** HostelCare
@@ -723,8 +673,6 @@ HTML · CSS · JavaScript · Python · Supabase
 ---
 
 ## 👨‍💻 Developer
-
-Team Name: **Jugaad**
 
 Team Leader: ***Mohd Zaid***
 
